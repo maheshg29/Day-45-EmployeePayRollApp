@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet"
+        href="http://fonts.googleapis.com/css2?family-Montserrat:ital,wght@0,100;0,200:0,300;0,400;0,600;1,500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family-Roboto:wght@300;400;500;600&display=swap">
+
+    <title>Employee Payroll App</title>
+    
+</head>
+
+<body>
+    <!-- UC1 -->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="/assets/images/logo.png" alt="">
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <!-- UC2 -->
+        <div class="header-content">
+            <div class="emp-details-text">
+                Employee Details <div class="emp-count">10</div>
+            </div>
+            <a href="/HTML/Payroll_form.html" class="add-button">
+                <img src="/assets/icons/add-24px.svg" alt="">Add User</a>
+
+        </div><!-- header-content -->
+        <!-- UC3 -->
+        <div class="table-main">
+            <table class="table" id="display">
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><img src="/assets/profile-images/Ellipse -2.png" class="profile" alt="">
+                    </td>
+                    <td>Nadeem Shaikh</td>
+                    <td>Male</td>
+                    <td>
+                        <div class="dept-label">HR</div>
+                        <div class="dept-label">Finance</div>
+                        <div class="dept-label">Engineer</div>
+                    </td>
+                    <td>5000000</td>
+                    <td>1 Nov 2021</td>
+                    <td>
+                        <img id="1" onclick="remove(this)" src="/assets/icons/delete-black-18dp.svg" alt="delete">
+                        <img id="1" onclick="update(this)" src="/assets/icons/create-black-18dp.svg" alt="edit">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="/assets/profile-images/Ellipse -4.png" class="profile" alt="">
+                    </td>
+                    <td>Sara Ali Khan</td>
+                    <td>Femal</td>
+                    <td>
+                        <div class="dept-label">HR</div>
+                    </td>
+                    <td>3000500</td>
+                    <td>10 Dec 2021</td>
+                    <td>
+                        <img id="1" onclick="remove(this)" src="/assets/icons/delete-black-18dp.svg" alt="delete">
+                        <img id="1" onclick="update(this)" src="/assets/icons/create-black-18dp.svg" alt="edit">
+                    </td>
+                </tr>
+                
+            </table>
+        </div><!--table-main-->
+    </div><!--main-content-->
+        <script defer src="/javaScript/Home.js"></script>
+        <script src="/javaScript/EmployeePayroll.js"></script>
+        <script src="/javaScript/utilities.js"></script>
+        <script src="/javaScript/site_properties.js"></script>
+</body>
+
+</html>
